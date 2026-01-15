@@ -74,14 +74,14 @@ def parse_label(val) -> int:
 
 def build_prompt(tweet_text: str) -> str:
     """
-    Простой промпт: даём твит и список аспектов.
-    Просим вернуть JSON с -1/0/+1 для каждого аспекта.
+   we provide a tweet and a list of aspects.
+   We ask [the model] to return a JSON with -1/0/+1 for each aspect.
     """
     aspects_str = "\n".join(f"- {a}" for a in ASPECTS)
     prompt = f"""
 You are an assistant for aspect-based sentiment analysis.
 
-Given a social-media post, you must assign a sentiment score (-1, 0, +1) 
+Given a social-media post, you must assign a sentiment score (-1, 0, +1)
 for each of the following aspects:
 
 {aspects_str}
