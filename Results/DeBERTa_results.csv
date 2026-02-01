@@ -1,0 +1,7 @@
+,perscision,recall,f1-score,support
+Negative (0),0.73,0.73,0.73,1504
+Not Mentioned (1),0.91,0.94,0.93,2977
+Positive (2),0.76,0.71,0.43,1520
+accuracy,,,0.83,6001
+macro avg,0.8,0.8,0.8,6001
+weighted avg,0.83,0.83,0.83,6001
